@@ -26,16 +26,16 @@ int main()
     {	
     	cin>>j;
     	if(bob.find(j)!=bob.end())
-			bob.erase(bob.find(j));
-		else
-			bob.insert(j);	
-	  }
+		bob.erase(bob.find(j));
+	else
+		bob.insert(j);	
+    }
 	
     auto ip=alice.begin();
     for(;ip!=alice.end();++ip)
     {
     	sum1=(sum1%mod +*ip%mod)%mod;
-	  }
+    }
     
     auto it=bob.begin();
     for(;it!=bob.end();++it)
