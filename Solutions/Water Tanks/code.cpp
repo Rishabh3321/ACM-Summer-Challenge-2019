@@ -14,12 +14,13 @@ int maxDiff (int arr[], int n)
 		diff = arr[i+1]-arr[i]; 
 		
 		if (curr_sum > 0) 
-		curr_sum += diff; 
+			curr_sum += diff; 
 		else
-		curr_sum = diff; 
+			curr_sum = diff; 
+		
 
-			if (curr_sum > max_sum) 
-		max_sum = curr_sum; 
+		if (curr_sum > max_sum) 
+			max_sum = curr_sum; 
 	} 
 
 	return max_sum; 
@@ -34,7 +35,7 @@ int main()
 	
 	for(int i=0;i<n;i++)
 	{	
-		cin>>arr[i];
+	     cin>>arr[i];
 	}
 	
 	long long int re = maxDiff(arr,n);
@@ -45,7 +46,7 @@ int main()
 	else
 	{   
 	    re*=k;
-        cout<<re; 
+            cout<<re; 
 	}
     return 0; 
 } 
