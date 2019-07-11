@@ -23,11 +23,8 @@ void dfs(int node, int h)
 }
 
 
-
-
 int main()
 {
-	//freopen("input.txt","r",stdin);
     int n,q,x,y;
     cin>>n;
     for(int i=0;i<n-1;i++)
